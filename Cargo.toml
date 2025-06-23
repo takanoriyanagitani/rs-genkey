@@ -1,0 +1,24 @@
+[package]
+name = "rs-genkey"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+
+[dependencies.sha2]
+version = "0.10.9"
+default-features = false
+features = [
+	"std",
+]
+
+[dependencies.hkdf]
+version = "0.12.4"
+default-features = false
+features = [
+	"std",
+]
